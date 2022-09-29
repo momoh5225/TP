@@ -1,3 +1,9 @@
 #!/bin/bash
 
-rm -r 4-SRC -y
+#!/bin/bash
+filename=$1
+if [ -f "$filename" ]; then
+echo "File exists"
+else
+echo "File does not exist"
+fi
